@@ -1,26 +1,39 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+
 # Create your views here.
+from requests import Response
+
 
 def register(request):
-    return render(request,'register.html')
+    return render(request, 'register.html')
+
 
 def RegisterSubmit(request):
-    cut = False
-    if request.method =='POST':
-        user =request.POST.get('user', None)
-        password=request.POST.get('password', None)
+    if request.method == 'POST':
+        registerUsername = request.POST.get('registerUsername', None)
+        registerPassword = request.POST.get('registerPassword', None)
         # VerifyPassword=request.POST.get('VerifyPassword', None)
-        mail=request.POST.get('mail', None)
-        phone=request.POST.get('phone', None)
-        if len(user)!=0 and password != 0:
-            with open("UserInfo.txt",'a+') as f:
-                data="|{}|{}|{}|{}|@".format(user,password,mail,phone)
-                f.write(data)
-                f.close()
-            cut =True
-    if cut:
-        return HttpResponse('注册成功\n' + '<a href="http://127.0.0.1:8000">点击跳转到首页</a>')
-    else:
-        return HttpResponse('兄弟别瞎玩，注册不成功\n' + '<a href="http://127.0.0.1:8000/register/">点击跳转到注册页面</a>')
+        registerEmail = request.POST.get('registerEmail', None)
+        with open("UserInfo.txt", 'a+') as f:
+            data = "|{}|{}|{}|@".format(registerUsername, registerPassword, registerEmail)
+            f.write(data)
+            f.close()
+    # return HttpResponse("<a href='http://47.98.58.33:8000'>注册成功,点击返回登录</a>")
+        return HttpResponse("<script>alert('注册成功！');window.location='http://127.0.0.1:8000';</script>")
+
+
+
+if __name__ == "__main__":
+    while 1:
+        registerUsername = input("1:")
+        registerPassword = input("2:")
+        # VerifyPassword=request.POST.get('VerifyPassword', None)
+        registerEmail = input("3:")
+        data = "|{}|{}|{}|@".format(registerUsername, registerPassword, registerEmail)
+        # with open("UserInfo.txt", 'a+') as f:
+        #     data = "|{}|{}|{}|@".format(registerUsername, registerPassword, registerEmail)
+        #     f.write(data)
+        #     f.close()
+        print(data)

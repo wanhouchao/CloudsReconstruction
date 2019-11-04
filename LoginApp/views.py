@@ -51,7 +51,34 @@ def Login(request):
                 if datalist[i].split("|")[2] == password:
                     cut = True
     if cut:
-        return HttpResponse("密码正确，但是没有什么功能。送你一句话：\n<h1>春风十里不如你三里桃花不及卿</h1>")
+        return render(request,'index.html')
     else:
         # return render(request, 'login.html')
         return HttpResponse("密码错误，但是没有什么功能。送你一句话：\n<h1>春风十里不如你三里桃花不及卿</h1>")
+
+
+
+
+if __name__=="__main__":
+    user =input("1:")
+    password=input("2:")
+    if len(user)!=0 and password != 0:
+        with open("../UserInfo.txt",'a+') as f:
+            data="|{}|{}|@".format(user,password)
+            f.write(data)
+            f.close()
+    user=input("1:")
+    password=input("2:")
+    cut=False
+    with open('../UserInfo.txt', 'r') as f:
+        data = f.read()  # 数据类型——>|wanhouchao|123456|@
+        f.close()
+    datalist = data.split('@')
+    for i in range(len(datalist) - 1):
+        if datalist[i].split("|")[1] == user:
+            if datalist[i].split("|")[2] == password:
+                cut = True
+        print(datalist[i].split("|")[1],datalist[i].split("|")[2])
+    print(cut)
+
+
