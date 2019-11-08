@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-
 # Create your views here.
 from requests import Response
 
@@ -20,9 +19,8 @@ def RegisterSubmit(request):
             data = "|{}|{}|{}|@".format(registerUsername, registerPassword, registerEmail)
             f.write(data)
             f.close()
-    # return HttpResponse("<a href='http://47.98.58.33:8000'>注册成功,点击返回登录</a>")
+        # return HttpResponse("<a href='http://47.98.58.33:8000'>注册成功,点击返回登录</a>")
         return HttpResponse("<script>alert('注册成功！');window.location='http://127.0.0.1:8000';</script>")
-
 
 
 if __name__ == "__main__":
