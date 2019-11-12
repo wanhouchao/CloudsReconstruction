@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Home</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="all,follow">
+		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="../static/test/vendor/bootstrap/css/bootstrap.min.css">
+		<!-- 字体 CSS-->
+		<link rel="stylesheet" href="../static/test/vendor/font-awesome/css/font-awesome.min.css">
+		<!-- 自定义图标字体-->
+		<link rel="stylesheet" href="../static/test/css/fontastic.css">
+		<!-- Google fonts - Roboto -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+		<!-- jQuery Circle-->
+		<link rel="stylesheet" href="../static/test/css/grasp_mobile_progress_circle-1.0.0.min.css">
+		<!-- 自定义滚动条-->
+		<link rel="stylesheet" href="../static/test/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+		<!-- 主题样式表-->
+		<link rel="stylesheet" href="../static/test/css/style.default.css" id="theme-stylesheet">
+		<!-- 定制样式表——用于您的更改-->
+		<link rel="stylesheet" href="../static/test/css/custom.css">
+		<!-- 网站图标-->
+		<link rel="shortcut icon" href="../static/test/img/favicon.ico">
+		<!-- Tweaks for older IEs-->
+		<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+		<script charset="utf-8" src="../static/test/js/chunk-079f.1f47eee0.js"></script>
+		<script charset="utf-8" src="../static/test/js/chunk-38d7.da3fc41b.js"></script>
+		<link href="../static/test/css/chunk-libs.cbb525e3.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Side Navbar -->
+		<nav class="side-navbar">
+			<div class="side-navbar-wrapper">
+				<!-- Sidebar Header    -->
+				<div class="sidenav-header d-flex align-items-center justify-content-center">
+					<!-- User Info-->
+					<div class="sidenav-header-inner text-center"><img src="../static/test/img/avatar-7.jpg" alt="person" class="img-fluid rounded-circle">
+						<h2 class="h5">Nathan Andrews</h2><span>Web Developer</span>
+					</div>
+					<!-- Small Brand information, appears on minimized sidebar-->
+					<div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center">
+							<strong>B</strong><strong class="text-primary">D</strong></a></div>
+				</div>
+				<!-- Sidebar Navigation Menus-->
+				<div class="main-menu">
+					<h5 class="sidenav-heading">menu</h5>
+					<ul id="side-main-menu" class="side-menu list-unstyled">
+						<li><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+						<li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse" class="collapsed"> <i class="icon-interface-windows"></i>Test
+							</a>
+							<ul id="exampledropdownDropdown" class="list-unstyled collapse" style="">
+								<li><a href="127.0.0.1:8000/CreateCase">Create Case</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="page">
+			<!-- navbar-->
+			<header class="header">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<div class="navbar-holder d-flex align-items-center justify-content-between">
+							<div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="icon-bars">
+									</i></a><a href="index.html" class="navbar-brand">
+									<div class="brand-text d-none d-md-inline-block"><span>Bootstrap </span><strong class="text-primary">Dashboard</strong></div>
+								</a></div>
+							<ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+								<!-- Notifications dropdown-->
+								<li class="nav-item dropdown"><a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown"
+									 aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell"></i><span class="badge badge-warning">12</span></a>
+									<ul aria-labelledby="notifications" class="dropdown-menu">
+										<li><a rel="nofollow" href="#" class="dropdown-item">
+												<div class="notification d-flex justify-content-between">
+													<div class="notification-content"><i class="fa fa-envelope"></i>You have
+														6 new
+														messages
+													</div>
+													<div class="notification-time"><small>4 minutes ago</small></div>
+												</div>
+											</a></li>
+										<li><a rel="nofollow" href="#" class="dropdown-item">
+												<div class="notification d-flex justify-content-between">
+													<div class="notification-content"><i class="fa fa-twitter"></i>You have
+														2
+														followers
+													</div>
+													<div class="notification-time"><small>4 minutes ago</small></div>
+												</div>
+											</a></li>
+										<li><a rel="nofollow" href="#" class="dropdown-item">
+												<div class="notification d-flex justify-content-between">
+													<div class="notification-content"><i class="fa fa-upload"></i>Server
+														Rebooted
+													</div>
+													<div class="notification-time"><small>4 minutes ago</small></div>
+												</div>
+											</a></li>
+										<li><a rel="nofollow" href="#" class="dropdown-item">
+												<div class="notification d-flex justify-content-between">
+													<div class="notification-content"><i class="fa fa-twitter"></i>You have
+														2
+														followers
+													</div>
+													<div class="notification-time"><small>10 minutes ago</small></div>
+												</div>
+											</a></li>
+										<li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
+												<strong> <i class="fa fa-bell"></i>view all notifications </strong></a></li>
+									</ul>
+								</li>
+								<!-- Messages dropdown-->
+								<li class="nav-item dropdown"><a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown"
+									 aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-envelope"></i><span class="badge badge-info">10</span></a>
+									<ul aria-labelledby="notifications" class="dropdown-menu">
+										<li><a rel="nofollow" href="#" class="dropdown-item d-flex">
+												<div class="msg-profile"><img src="../static/test/img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+												<div class="msg-body">
+													<h3 class="h5">Jason Doe</h3><span>sent you a direct
+														message</span><small>3 days
+														ago at 7:58 pm - 10.06.2019</small>
+												</div>
+											</a></li>
+										<li><a rel="nofollow" href="#" class="dropdown-item d-flex">
+												<div class="msg-profile"><img src="../static/test/img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
+												<div class="msg-body">
+													<h3 class="h5">Frank Williams</h3><span>sent you a direct
+														message</span><small>3
+														days ago at 7:58 pm - 10.06.2019</small>
+												</div>
+											</a></li>
+										<li><a rel="nofollow" href="#" class="dropdown-item d-flex">
+												<div class="msg-profile"><img src="../static/test/img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
+												<div class="msg-body">
+													<h3 class="h5">Ashley Wood</h3><span>sent you a direct
+														message</span><small>3
+														days ago at 7:58 pm - 10.06.2019</small>
+												</div>
+											</a></li>
+										<li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
+												<strong> <i class="fa fa-envelope"></i>Read all messages </strong></a></li>
+									</ul>
+								</li>
+								<!-- Languages dropdown    -->
+								<li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown"
+									 aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="../static/test/img/flags/16/GB.png"
+										 alt="English"><span class="d-none d-sm-inline-block">English</span></a>
+									<ul aria-labelledby="languages" class="dropdown-menu">
+										<li><a rel="nofollow" href="#" class="dropdown-item"> <img src="../static/test/img/flags/16/DE.png" alt="English"
+												 class="mr-2"><span>German</span></a>
+										</li>
+										<li><a rel="nofollow" href="#" class="dropdown-item"> <img src="../static/test/img/flags/16/FR.png" alt="English"
+												 class="mr-2"><span>French
+												</span></a>
+										</li>
+									</ul>
+								</li>
+								<!-- Log out-->
+								<li class="nav-item"><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline-block">Logout</span><i
+										 class="fa fa-sign-out"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!-- Breadcrumb-->
+			<div class="breadcrumb-holder">
+				<div class="container-fluid">
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Test</li>
+					</ul>
+				</div>
+			</div>
+			<section class="forms">
+				<form method="post" action="CreateCode/">
+					     {% csrf_token %}
+				<div class="container-fluid">
+					<!-- Page Header-->
+					<header>
+						<h1 class="h3 display">Create Test Case </h1>
+					</header>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="card">
+								<div class="card-header d-flex align-items-center">
+									<h4>Case Info</h4>
+								</div>
+								<div class="card-body">
+									<p>Test case identity information.</p>
+									<div class="form-group">
+										<label>Creator：创建者</label>
+										<input type="text" placeholder="Creator" class="form-control" name="Creator">
+									</div>
+									<div class="form-group">
+										<label>Relevance module：关联模块</label>
+										<input type="text" placeholder="Module Name" class="form-control" name="ModuleName">
+									</div>
+									<div class="form-group">
+										<label>Case Name：用例标题</label>
+										<input type="text" placeholder="Case Name" class="form-control" name="CaseName">
+									</div>
+									<!--<div class="form-group">-->
+									<!--<input type="submit" value="Submit" class="btn btn-primary">-->
+									<!--</div>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="card">
+								<div class="card-header d-flex align-items-center">
+									<h4>Add assert</h4>
+								</div>
+								<div class="card-body">
+									<p>assert identity information.</p>
+									<div class="form-group">
+										<label>Assert that way：断言方式</label>
+										<select name="assert" class="form-control">
+											<option>assertEqual</option>
+											<option>assertNotEqual</option>
+											<option>assertTrue</option>
+											<option>assertFalse</option>
+											<option>assertIsNone</option>
+											<option>assertIsNotNone</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label>expected result ：预计结果</label>
+										<input type="text" placeholder="expected result" class="form-control" name="ExpectedResult">
+									</div>
+									<div class="form-group">
+										<label>actual result ：实际结果</label>
+										<input type="text" placeholder="Please enter element" class="form-control" name="ActualResult">
+									</div>
+									<!--<div class="form-group">-->
+									<!--<input type="submit" value="Submit" class="btn btn-primary">-->
+									<!--</div>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="card">
+								<div class="card-header d-flex align-items-center">
+									<h4>Precondition</h4>
+								</div>
+								<div class="card-body">
+									<p>Select browser input URL.</p>
+									<div class="form-group">
+										<label>Select browser：选择浏览器</label>
+										<select name="browser" class="form-control">
+											<option>Chrome</option>
+											<option>Firefox</option>
+											<option>IE</option>
+											<option>Edge</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label>Input URL ：输入URL</label>
+										<input type="text" placeholder="Input URL" class="form-control" name="URL">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="card">
+								<div class="card-header d-flex align-items-center">
+									<h4>Add new case </h4>
+								</div>
+								<div class="card-body">
+									<div class="el-table__body-wrapper is-scrolling-none">
+										<table id="table_codeList">
+											<tr id="code_0">
+												<td><select name="action" class="form-control" id="activon_0">
+														<option>Click</option><option>Clear</option><option>Write</option><option>Switch_to</option><option>Default_content</option><option>Text_up</option><option>Switch_to_window</option><option>Close_win</option><option>FindElement</option>
+													</select></td>
+												<!-- <td><input type="text" id="action_0" class="form-control" placeholder="Please enter action" /></td> -->
+												<td><input name="elements" type="text" id="action_0" class="form-control" placeholder="Please enter element" style="width:600px;" /></td>
+												<td><button type="button" class="btn btn-primary" id="add_0" onclick="Add(this)">新增</button></td>
+												<td><button type="button" class="btn btn-primary" id="delete_0" onclick="Delente(this)">删除</button></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><div class="form-group"><input type="submit" value="Submit" class="btn btn-primary">
+					</div></div>
+					</form>
+			</section>
+			<footer class="main-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<!-- <p>Copyright © 2019.Company name All rights reserved.<a target="_blank"
+                                href="http://sc.chinaz.com/moban/">网页模板</a>
+                        </p> -->
+						</div>
+						<div class="col-sm-6 text-right">
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- JavaScript files-->
+		<script src="../static/test/vendor/jquery/jquery.min.js"></script>
+		<script src="../static/test/js/jquery-1.8.2.min.js"></script>
+		<script src="../static/test/vendor/popper.js/umd/popper.min.js"></script>
+		<script src="../static/test/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../static/test/js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+		<script src="../static/test/vendor/jquery.cookie/jquery.cookie.js"></script>
+		<script src="../static/test/vendor/chart.js/Chart.min.js"></script>
+		<script src="../static/test/vendor/jquery-validation/jquery.validate.min.js"></script>
+		<script src="../static/test/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="../static/test/js/charts-home.js"></script>
+		<script src="../static/test/js/chunk-libs.039bb07a.js"></script>
+		<script src="../static/test/js/app.1fbdb49b.js"></script>
+		<!-- Main File-->
+		<script src="../static/test/js/front.js"></script>
+		<!-- 自定义文件 -->
+		<script src="../static/test/js/UserDefined.js"></script>
+	</body>
+
+</html>

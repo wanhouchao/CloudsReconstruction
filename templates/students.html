@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>这里是一个表格头</thead><br>
+        <tbody id="tbody">
+            <tr>
+                <td><input value="Enter the action here" name="action0"></td>
+                <td><input value="Enter the element here" name="element0"></td>
+                <td><button type="button" onclick="copy(this,'trbody');" name="add0"><i>增加</i></button></td>
+                <td><button type="button" name="delete0" onclick="deleInput()";>删除</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="../static/test/vendor/jquery/jquery.min.js"></script>
+    <script type='text/javascript'>
+        var count = 1;
+        // debug    ger;
+        function copy(obj, tbody) {
+            var tr = ('<tr><td><input value="Enter the action here" name="action'+count+'"></td><td><input value="Enter the element here" name="element'+count+'"></td><td><button type="button" onclick="copy(this,"trbody");" name="add'+count+'"><i>增加</i></button></td><td><button type="button"  name="delete'+count+'">删除</button></td></tr>');
+            count++;
+            $("#tbody").append(tr)
+        }
+    </script>
+<script>
+        function deleInput(){   
+            var el = document.getElementsByName("action0");
+            el.parentNode.removeChild(el);
+        }
+</script>
+
+<script type="text/javascript">
+    function clearText() {
+        document.getElementById("text").value = "";
+    }
+</script>
+
+
+
+<form action="index.jsp" method="post">
+    <input id="text" type="text" name="text" />
+    <button type="button" onclick="clearText();">clear</button>
+    <button type="submit">submit</button>
+	
+</form>
+
+
+</body>
+</html>
